@@ -39,14 +39,14 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
           izz="${0.0833333 * 1.1 * (0.105*0.105 + 0.102*0.102)}" />
       </inertial>
       <visual>
-        <origin xyz="0 0 0" rpy="0 0 0" />
+        <origin xyz="0 0 0" rpy="${-M_PI} 0 0" />
         <geometry>
           <!-- Origin of this mesh is the focal point of the LIDAR. -->
           <mesh filename="package://lms1xx/meshes/sick-lms1xx.dae" />
         </geometry>
       </visual>
       <collision>
-        <origin xyz="0 0 -0.05" rpy="0 0 0" />
+        <origin xyz="0 0 -0.05" rpy="${-M_PI} 0 0" />
         <geometry>
           <box size="0.105 0.1 0.1" />
         </geometry>
